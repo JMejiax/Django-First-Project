@@ -149,7 +149,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_URL = '/media/'
 STATICFILES_DIRS = {
-    os.path.join(BASE_DIR, 'media')
+    os.path.join(BASE_DIR, 'media'),
+    '../media/',
 }
 
 # CONFIGURACION PARA ENVIAR CORREOS
