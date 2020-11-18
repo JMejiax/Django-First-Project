@@ -14,10 +14,10 @@ def contact(request):
     if request.method == "POST":
         f = Formulario_Contacto(request.POST)
 
-        if f.is_valid():
+        if f.is_valid(): 
             info_form = f.cleaned_data
 
-            send_mail(info_form['asunto'], info_form['mensaje'],
+            send_mail('Cliente Nuevo', 'El cliente quiere recibir informacion',
             info_form.get('mail', 'lucasvaan80@gmail.com'), [info_form['mail']],)
 
             return render(request, "PaginaBlogApp/contact.html", {'en': 'x'})
