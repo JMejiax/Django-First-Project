@@ -1,0 +1,97 @@
+{% extends "PaginaBlogApp/base/base.html" %}
+
+{% block links %}
+
+<!-- Links de css -->
+
+<link rel="stylesheet" type="text/css" href="/media/contact/form.css?rnd&23">
+
+{% endblock links %}
+
+
+{% block content %}
+
+{% if en == "x" %}
+
+<p class="m-0">
+<div class="social-part bg-success text-center" style="font-size: 30px; padding: 10px;">
+  <i class="fa fa-check-circle" aria-hidden="true" style="color: white;">
+    Correo enviado exitosamente</i>
+</div>
+</p>
+{% endif %}
+
+<br><br>
+
+<h1 class="text-center">Contactanos</h1>
+<p class="text-center h3">Dejanos tus datos y nos pondremos en contacto pronto.</p>
+<br>
+
+<div class="container">
+
+  <form>
+    <div class="form-row">
+      <div class="col-sm-12 col-md-4">
+        <label for="nombre">Nombre</label>
+        <input type="text" required id="nombre" name="name" placeholder="Escriba su nombre">
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <label for="apellido">Apellidos</label>
+        <input type="text" required id="apellido" name="apellido" placeholder="Escriba sus apellidos">
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <p>Fecha de Nacimiento</p>
+        <input type="date" class="form-control h-50" id="uname" placeholder="Ingrese su fecha de nacimiento"
+          name="uname" required>
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col-sm-12 col-md-6">
+        <label for="mail">E-Mail</label>
+        <input type="email" required id="mail" name="mail" placeholder="123@ejemplo.com">
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <p>Seleccione su grado acádemico</p>
+        <select id="GradoAcademico" class="form-control h-50" required>
+          <option>--Seleccione--</option>
+          <option value="2">Escuela</option>
+          <option value="3">Colegio</option>
+          <option value="4">Diploma</option>
+          <option value="5">Bachillerato</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col-sm-12 col-md-6">
+        <p>Seleccione su género:</p>
+
+        &nbsp;&nbsp;&nbsp;
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputRadioFemenimo" value="F"
+          required>
+        <label class="form-check-label" for="radioFemenimo">Masculino</label>
+
+        &nbsp;&nbsp; &nbsp;&nbsp;
+
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputRadioMasculino" value="M"
+          required>
+        <label class="form-check-label" for="radioMasculino">Femenino</label>
+      </div>
+
+    </div>
+    <br>
+
+    <div class="form-row">
+      <div class="col-sm-12 col-md-12">
+        <input type="submit" value="Enviar">
+      </div>
+    </div>
+  </form>
+
+</div>
+
+<br>
+
+{% endblock %}

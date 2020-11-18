@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head> 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="/media/base/base.css">
+
+  {% block links %}
+
+
+  {% endblock links %}
+
+</head>
+
+<body> 
+
+  <!-- Navbar ?rnd=132 -->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top navbar-solid" id="barra-nav">
+    <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbar1"
+      aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="/">
+      <img src="/media/base/titulo.png" style="color: white; margin: 0 10px;">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'Inicio' %}" >Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/nosotros/' %}active{% endif %}" href="{% url 'Nosotros' %}" >Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/contacto/' %}active{% endif %}" href="{% url 'Contacto' %}" >Contactos </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/posts/' %}active{% endif %}" href="{% url 'Publicaciones' %}">Publicaciones</a>
+        </li>
+      </ul>
+      <div class="social-part" style="font-size: 20px;">
+        <a href="https://www.linkedin.com/in/jonathan-mejias-3a3a74154">
+          <i class="fa fa-linkedin" aria-hidden="true" style="color: white;"></i>
+        </a>
+        <a href="https://github.com/JMejiax">
+          <i class="fa fa-github" aria-hidden="true" style="color: white;"></i>
+        </a>
+        <a href="https://instagram.com/jm_cys?igshid=138nzlq9oxdcds">
+          <i class="fa fa-instagram" aria-hidden="true" style="color: white;"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!--CONTENIDO CAMBIANTE-->
+  {% block content %}
+
+
+  
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="footer text-faded text-center py-5 sticky-bottom" style="background-color: #222831">
+    <div class="container-">
+      <p class="m-0">
+      <div class="social-part" style="font-size: 50px;">
+        <a href="https://www.linkedin.com/in/jonathan-mejias-3a3a74154">
+          <i class="fa fa-linkedin-square fa-xs" aria-hidden="true" style="color: white;"></i>
+        </a>
+        <a href="https://github.com/JMejiax">
+          <i class="fa fa-github-square" aria-hidden="true" style="color: white;"></i>
+        </a>
+        <a href="https://instagram.com/jm_cys?igshid=138nzlq9oxdcds">
+          <i class="fa fa-instagram" aria-hidden="true" style="color: white;"></i>
+        </a>
+      </div>
+      </p>
+
+      <div class="text-light">
+        Iconos diseñados por <a class="link" href="https://www.flaticon.es/autores/pixel-perfect"
+          title="Pixel perfect">Pixel perfect</a> from <a class="link" href="https://www.flaticon.es/"
+          title="Flaticon">www.flaticon.es</a>
+      </div>
+
+      <p class="m-0 mbt">
+        <a href="sample.html" class="link text-light">Política de privacidad -</a>
+        <a href="sample.html" class="link text-light"> Aviso legal -</a>
+        <a href="sample.html" class="link text-light"> Cookies</a>
+      </p>
+      <p class="m-0 mbt1 text-light">&copy; Proyecto Aplicaciones Web 2020</p>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+<!--
+COLORES:
+#222831 DARK
+#393e46 DARK LIGHT
+#b55400 BROWN LIKE ORANGE
+#eeeeee WHITE
+
+
+-->
