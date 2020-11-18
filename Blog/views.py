@@ -12,4 +12,4 @@ def publicaciones(request):
     return render(request, 'Blog/blogs.html', {'blogs': blogs})
 
 def publicacion(request):
-    return HttpResponse('xdfsd')
+    return render(request, 'Blog/post.html')
