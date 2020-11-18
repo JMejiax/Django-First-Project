@@ -12,3 +12,13 @@
   text-align: center;
   padding-top: 40px;
 }
+
+.btn.btn-primary{
+  background-color: #222831 !important;
+  border-color: #222831 !important;
+}
+
+.btn.btn-primary:hover{
+  background-color: #b55400 !important;
+  border-color: #b55400 !important;
+}
