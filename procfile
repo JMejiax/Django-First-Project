@@ -1,1 +1,0 @@
-web: gunicorn PaginaBlog.wsgi.application --log-file -
