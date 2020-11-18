@@ -82,8 +82,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-
+"""
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -94,6 +94,7 @@ DATABASES = {
         'DATABASE_PORT': '5432',
     }
 }
+
 """
 import dj_database_url
 from decouple import config
@@ -102,7 +103,6 @@ DATABASES = {
         default=config('DATABASE_URL')
     )
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -146,11 +146,11 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 """
-STATIC_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 STATICFILES_DIRS = {
-    os.path.join(BASE_DIR, 'media'),
-    '../media/',
+    os.path.join(BASE_DIR, 'static'),
 }
 
 # CONFIGURACION PARA ENVIAR CORREOS
