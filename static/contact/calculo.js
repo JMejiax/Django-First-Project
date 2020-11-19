@@ -13,7 +13,7 @@ function fib(n){
 function getFib(){
     fecha = document.getElementById("fecha").value;
     day = fecha[8]+fecha[9]
-    if (fecha[8] == '0'){day = fecha[8]+fecha[9]}
+    if (fecha[8] == '0'){day = fecha[9]}
     alert(day + ', fib: ' + fib(Number(day)))
 }
 
