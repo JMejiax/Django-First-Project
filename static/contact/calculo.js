@@ -1,13 +1,14 @@
-var memo = []
-for (var i = 0; i < 35; i++){
-    memo.push(0);
-}
-
 function fib(n){
-    if (n == 0 || n==1){return 1}
-    if (memo[n] > 0) {return memo[n]}
-    memo[n] = memo[n-1] + memo[n-2]
-    return memo[n]
+	var a = 0
+	var b = 1
+	for(var i = 2; i<Number(n+1); i++){
+		var new_a = 0 * a + 1 * b
+		var new_b = 1 * a + 1 * b
+		
+		a = new_a
+        b = new_b
+    }
+	return b
 }
 
 function getFib(){
