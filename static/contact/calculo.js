@@ -1,3 +1,7 @@
+var memo = []
+for (var i = 0; i < 35; i++){
+    memo.push(0);
+}
 
 function fib(n){
     if (n == 0 || n==1) return 1
@@ -8,7 +12,8 @@ function fib(n){
 
 function getFib(){
     fecha = document.getElementById("fecha").value;
-    alert(fecha)
+    day = fecha.getDate()
+    alert(day + ', fib: ', fib(day))
 }
 
 document.getElementById('btn1').addEventListener('click', getFib);
