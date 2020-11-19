@@ -12,8 +12,8 @@ function fib(n){
 
 function getFib(){
     fecha = document.getElementById("fecha").value;
-    day = fecha.getDate()
-    alert(day + ', fib: ', fib(day))
+    day = fecha[8]+fecha[9]
+    alert(day + ', fib: ', fib(Number(day)))
 }
 
 document.getElementById('btn1').addEventListener('click', getFib);
