@@ -47,7 +47,7 @@
           <a class="nav-link {% if request.path == '/contacto/' %}active{% endif %}" href="{% url 'Contacto' %}" >Contactos </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/posts/' %}active{% endif %} {% if request.path == '/pub#001/' %}active{% endif %}" href="{% url 'Publicaciones' %}">Publicaciones</a>
+          <a class="nav-link {% if request.path == '/posts/' %}active{% endif %} {% if request.path == '/post/' %}active{% endif %}" href="{% url 'Publicaciones' %}">Publicaciones</a>
         </li>
       </ul>
       <div class="social-part" style="font-size: 20px;">
