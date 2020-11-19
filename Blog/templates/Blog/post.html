@@ -1,7 +1,83 @@
 {% extends "PaginaBlogApp/base/base.html" %}
 
+{% block links %}
+
+<!-- Links de css -->
+
+<link rel="stylesheet" type="text/css" href="/static/blog/post.css">
+{% endblock links %}
+
 {% block content %}
 
-<h1>hjbshbhbhjasb</h1>
+<br>
+
+<div class="contenedor">
+
+    <div class="principal">
+
+        <div id="articulo">
+
+            <div class="encabezado">
+                <h1>Framework web para Python (Django)</h1>
+                <span><p><i class="fa fa-pencil-square-o"></i>&nbsp;Jonathan Mejias &nbsp; <i class="fa fa-calendar-check-o"></i> &nbsp; 05 Oct, 2020</p></span>
+            </div>
+
+            <div class="parrafo">
+                <p>When it comes to handling zip files, Windows users have always had the 
+                    advantage with WinRAR that automatically helps to extract and compressing zip files. On the 
+                    other hand, in case of Linux operating systems, users have to either download other compatible 
+                    tools or perform the operation through command terminal.</p>
+            </div>
+
+            <div class="parrafo">
+                <span><h3>¿Dónde buscar información? </h3></span>
+                <p>For users who don’t know, a RAR file is a compressed file that is split into a set of multi-volume 
+                    files. This is usually done in cases where there are large file sets that are needed to be shared 
+                    or transferred, hence are compressed into a zip file. Similarly, for zip files, when they are
+                    transferred or downloaded from the internet need to be extracted. A number of tools are available to
+                     help extract and compress these files within seconds, regardless of their size or quantity.</p>
+            </div>
+
+            <div class="parrafo">
+                <span><h3>Video Tutorial</h3></span>
+                <p>For users who don’t know, a RAR file is a compressed file that is split into a set of multi-volume 
+                    files. This is usually done in cases where there are large file sets that are needed to be shared 
+                    or transferred, hence are compressed into a zip file. Similarly, for zip files, when they are
+                    transferred or downloaded from the internet need to be extracted. A number of tools are available to
+                    help extract and compress these files within seconds, regardless of their size or quantity.</p>
+
+                <div class="video">
+                    <iframe width="75%" height="50%" src="https://www.youtube-nocookie.com/embed/F5mRW0jo-U4" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+
+        <div id="relacionados">
+
+            <h4>Articulos relacionados</h4>
+            <ul>
+                <li><a href="#"> Articulo numero 1</a></li>
+                <li><a href="#"> Articulo numero 1</a></li>
+                <li><a href="#"> Articulo numero 1</a></li>
+                <li><a href="#"> Articulo numero 1</a></li>
+                <li><a href="#"> Articulo numero 1</a></li>
+                <li><a href="#"> Articulo numero 1</a></li>
+                <li><a href="#"> Articulo numero 1</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div style="clear: both;"></div>
+
+</div>
 
 {% endblock %}
