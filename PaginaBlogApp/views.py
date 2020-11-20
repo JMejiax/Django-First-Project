@@ -27,8 +27,8 @@ def contact(request):
             send_mail('Cliente Nuevo', mensaje,
             'lucasvaan80@gmail.com', ['jmejias986@gmail.com'])
 
-            send_mail('Mensaje del autor', 'Gracias por confiar en nosotros, en breve le enviaremos más informacón.',
-            'lucasvaan80@gmail.com', [data['mail']])
+            #send_mail('Mensaje del autor', 'Gracias por confiar en nosotros, en breve le enviaremos más informacón.',
+            #'lucasvaan80@gmail.com', [data['mail']])
 
             return render(request, "PaginaBlogApp/contact.html")
         f = Formulario_Contacto()
