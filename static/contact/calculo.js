@@ -17,7 +17,7 @@ function getFib(){
     if (fecha[8] == '0'){day = fecha[9]}
     alert('Todo correcto, nos pondremos en contacto pronto\n' + 
     '**Sabias que ' + fib(Number(day)) + ', es el fibonacci de ' + day 
-    + ', el dia de tu cumpleaños :)')
+    + ', el dia de tu cumpleaños :)**')
 }
 
 document.getElementById('btn1').addEventListener('click', getFib);

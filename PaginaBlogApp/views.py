@@ -20,7 +20,7 @@ def contact(request):
             send_mail('Cliente Nuevo', 'El cliente quiere recibir informacion',
             info_form.get('mail', 'lucasvaan80@gmail.com'), [info_form['mail']],)
 
-            return render(request, "PaginaBlogApp/contact.html", {'en': 'x'})
+            return render(request, "PaginaBlogApp/contact.html")
         f = Formulario_Contacto()
     
-    return render(request, "PaginaBlogApp/contact.html", {'en': "y"})
+    return render(request, "PaginaBlogApp/contact.html")
