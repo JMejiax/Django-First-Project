@@ -12,13 +12,23 @@ def about_us(request):
 
 def contact(request):
     if request.method == "POST":
-        f = Formulario_Contacto(request.POST)
+        data = {
+            'nombre': request.POST.get('name'),
+            'apellidos': request.POST.get('apellido'),
+            'mail': request.POST.get('mail')
+        }
+        f = Formulario_Contacto(data)
 
         if f.is_valid(): 
-            info_form = f.cleaned_data
+            # info_form = f.cleaned_data
 
-            send_mail('Cliente Nuevo', 'El cliente quiere recibir informacion',
-            info_form.get('mail', 'lucasvaan80@gmail.com'), [info_form['mail']],)
+            mensaje = 'El cliente ' + data['nombre'] + 'desea recibir mas información, su correo es: ' + request.POST.get('mail')
+
+            send_mail('Cliente Nuevo', mensaje,
+            'lucasvaan80@gmail.com', ['jmejias986@gmail.com'])
+
+            send_mail('Mensaje del autor', 'Gracias por confiar en nosotros, en breve le enviaremos más informacón.',
+            'lucasvaan80@gmail.com', [data['mail']])
 
             return render(request, "PaginaBlogApp/contact.html")
         f = Formulario_Contacto()
