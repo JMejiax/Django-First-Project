@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
-from form import Formulario_Contacto
+from .form import Formulario_Contacto
 from PaginaBlog import settings 
 
 # Create your views here.
