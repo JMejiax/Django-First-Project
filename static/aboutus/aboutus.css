@@ -7,21 +7,21 @@ img#body-img{
 	width: 100%;
 }
 
-/* Container for skill bars */
 .contenedor {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 100%; 
+  background-color: #ddd; 
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 5px; /* Add top padding */
-  padding-bottom: 5px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right; 
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  padding-right: 5px;
+  color: white; 
 }
 
-.java {width: 80%; background-color: #393e46;} /* Green */
-.csharp {width: 70%; background-color: #393e46;} /* Blue */
-.py {width: 55%; background-color: #393e46;} /* Red */
-.html {width: 50%; background-color: #393e46;} /* Dark Grey */
-.css {width: 50%; background-color: #393e46;} /* Dark Grey */
+.java {width: 80%; background-color: #393e46;} 
+.csharp {width: 70%; background-color: #393e46;} 
+.py {width: 55%; background-color: #393e46;} 
+.html {width: 50%; background-color: #393e46;}
+.css {width: 45%; background-color: #393e46;} 
