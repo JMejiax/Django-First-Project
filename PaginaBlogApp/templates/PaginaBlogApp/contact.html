@@ -27,12 +27,12 @@
       </div>
       <div class="col-sm-12 col-md-4">
         <label for="apellido">Apellidos</label>
-        <input type="text" required id="apellido" name="apellido" placeholder="Escriba sus apellidos">
+        <input type="text" required id="apellido" name="to_last_name" placeholder="Escriba sus apellidos">
       </div>
       <div class="col-sm-12 col-md-4">
         <p>Fecha de Nacimiento</p>
         <input type="date" class="form-control h-50" id="fecha" placeholder="Ingrese su fecha de nacimiento"
-          name="fecha" required>
+          name="to_date" required>
       </div>
     </div>
     <br>
@@ -44,12 +44,12 @@
 
       <div class="col-sm-12 col-md-6">
         <p>Seleccione su grado acádemico</p>
-        <select id="GradoAcademico" class="form-control h-50" required>
+        <select id="GradoAcademico" class="form-control h-50" name="to_grade" required>
           <option>--Seleccione--</option>
-          <option value="2">Escuela</option>
-          <option value="3">Colegio</option>
-          <option value="4">Diploma</option>
-          <option value="5">Bachillerato</option>
+          <option value="Escuela">Escuela</option>
+          <option value="Colegio">Colegio</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Bachillerato">Bachillerato</option>
         </select>
       </div>
     </div>
@@ -59,15 +59,15 @@
         <p>Seleccione su género:</p>
 
         &nbsp;&nbsp;&nbsp;
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputRadioFemenimo" value="F"
+        <input class="form-check-input" type="radio" name="to_gender" id="inputRadioMasculino" value="Masculino"
           required>
-        <label class="form-check-label" for="radioFemenimo">Masculino</label>
+        <label class="form-check-label" for="radioMasculino">Masculino</label>
 
         &nbsp;&nbsp; &nbsp;&nbsp;
 
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputRadioMasculino" value="M"
+        <input class="form-check-input" type="radio" name="to_gender" id="inputRadioFemenino" value="Femenino"
           required>
-        <label class="form-check-label" for="radioMasculino">Femenino</label>
+        <label class="form-check-label" for="radioFemenino">Femenino</label>
       </div>
 
     </div>
