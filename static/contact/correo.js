@@ -35,8 +35,10 @@ document.getElementById('formulario')
     .then(() => {
       btn.value = 'Enviado';
       getFib()
+      btn.disabled = True;
     }, (err) => {
       btn.value = 'Enviado, aunque hubo un error';
       alert(JSON.stringify(err));
+      btn.disabled = True;
     });
 });
