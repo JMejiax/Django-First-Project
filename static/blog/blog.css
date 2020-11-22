@@ -22,3 +22,8 @@
   background-color: #b55400 !important;
   border-color: #b55400 !important;
 }
+
+.card-img-top{
+  min-height: 125px !important;
+  max-height: 125px !important;
+}
