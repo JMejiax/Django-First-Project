@@ -19,11 +19,11 @@
 
 <div class="container">
 
-  <form method="POST"> {% csrf_token %}
+  <form id="formulario" method="POST"> {% csrf_token %}
     <div class="form-row">
       <div class="col-sm-12 col-md-4">
         <label for="nombre">Nombre</label>
-        <input type="text" required id="nombre" name="name" placeholder="Escriba su nombre">
+        <input type="text" required id="nombre" name="to_name" placeholder="Escriba su nombre">
       </div>
       <div class="col-sm-12 col-md-4">
         <label for="apellido">Apellidos</label>
@@ -39,7 +39,7 @@
     <div class="form-row">
       <div class="col-sm-12 col-md-6">
         <label for="mail">E-Mail</label>
-        <input type="email" required id="mail" name="mail" placeholder="123@ejemplo.com">
+        <input type="email" required id="mail" name="to_email" placeholder="123@ejemplo.com">
       </div>
 
       <div class="col-sm-12 col-md-6">
@@ -85,5 +85,10 @@
 <br>
 
 <script src="/static/contact/calculo.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
+<script type="text/javascript">
+  emailjs.init('user_H01U9FjKf40JH6PIrgRMi')
+</script>
+<script src="/static/contact/correo.js"></script>
 {% endblock %}

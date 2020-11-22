@@ -38,17 +38,17 @@ def contact(request):
 """
 
 def contact(request):
-    if request.method == "POST":
-        data = {
-            'nombre': request.POST.get('name'),
-            'apellidos': request.POST.get('apellido'),
-            'mail': request.POST.get('mail')
-        }
-        mensaje = 'El cliente ' + data['nombre'] + ' desea recibir mas información, su correo es: ' + request.POST.get('mail')
-        email_from = settings.EMAIL_HOST_USER
-        recipient_list = ['lucasvaan80@gmail.com']
+    # if request.method == "POST":
+    #     data = {
+    #         'nombre': request.POST.get('name'),
+    #         'apellidos': request.POST.get('apellido'),
+    #         'mail': request.POST.get('mail')
+    #     }
+    #     mensaje = 'El cliente ' + data['nombre'] + ' desea recibir mas información, su correo es: ' + request.POST.get('mail')
+    #     email_from = settings.EMAIL_HOST_USER
+    #     recipient_list = ['lucasvaan80@gmail.com']
 
-        send_mail('subject', mensaje, email_from, recipient_list)
+    #     send_mail('subject', mensaje, email_from, recipient_list)
     
     return render(request, "PaginaBlogApp/contact.html")
 
