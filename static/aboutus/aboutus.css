@@ -6,3 +6,24 @@ img#body-img{
 	height: 350px;
 	width: 100%;
 }
+
+/* Container for skill bars */
+.contenedor {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.java {width: 80%; background-color: #4CAF50;} /* Green */
+.csharp {width: 80%; background-color: #2196F3;} /* Blue */
+.py {width: 55%; background-color: #f44336;} /* Red */
+.html {width: 50%; background-color: #808080;} /* Dark Grey */
+.css {width: 50%; background-color: #808080;} /* Dark Grey */
+.django {width: 40%; background-color: #808080;} /* Dark Grey */
+.js {width: 20%; background-color: #808080;} /* Dark Grey */
