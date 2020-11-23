@@ -7,3 +7,4 @@ python-decouple==3.3
 pytz==2019.3
 whitenoise==5.2.0
 sendgrid
+praw
