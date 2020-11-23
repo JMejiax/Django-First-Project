@@ -19,6 +19,7 @@
 <br>
 <h1>Resultados para: '{{busqueda}}'</h1>
 
+{% if articulos %}
 {% for art in articulos %}
 
 
@@ -45,5 +46,8 @@
 
 {% endfor %}
 
+{% else %}
+  <p>NO SE ENCONTRARON RESULTADOS</p>
+{% endif %}
 <br>
 {% endblock %}
