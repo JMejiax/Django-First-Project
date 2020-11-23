@@ -1,7 +1,12 @@
 $(document).ready(function () {
+
+    $("#search").hide();        
+    $("#btnSearch").hide(); 
+
     $("#mostar").click(function () {
         $("#search").toggle();        
-        $("#btnSearch").toggle();        
+        $("#btnSearch").toggle();   
+        $("#mostar").hide();
     });
 
 
