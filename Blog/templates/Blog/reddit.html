@@ -2,6 +2,8 @@
 
 {% block links %}
 
+<title>Busqueda en reddit</title>
+
 <!-- Links de css -->
 
 <link rel="stylesheet" type="text/css" href="/static/blog/reddit.css">
@@ -9,12 +11,6 @@
 {% endblock links %}
 
 {% block content %}
-
-<form method="POST" role="search"> {% csrf_token %}
-    <label for="search">Buscar articulos en reddit</label><br>
-    <input id="search" name="search" type="search" placeholder="Buscar..." required />
-    <button type="submit">Buscar</button>
-</form>
 
 {% if articulos %}
 <br>
