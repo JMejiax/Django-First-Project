@@ -59,7 +59,7 @@ a{
     padding: 0px; 
     width: 100%; 
     outline: none; 
-    height: 30px; 
+    height: 40px; 
     border-radius: 5px; 
 } 
   
@@ -73,8 +73,11 @@ a{
     top: 2px; 
     height: 30px; 
     cursor: pointer; 
-    color: white; 
-    background-color: #1e90ff; 
+    color: black; 
+    background-color: #52525200; 
     transform: translateX(2px); 
 } 
 
+#btnSearch:hover{
+    color: #b55400;
+}
