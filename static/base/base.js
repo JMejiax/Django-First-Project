@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $("#btnSearch").click(function () {
-        $("#search").fadeOut(3000);
-
+        $("#search").toggle();
     });
     // $("#btnSearch").click(function () {
     //     $("#search").slideDown(5000);
