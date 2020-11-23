@@ -24,7 +24,7 @@ def reddit(request):
         for submission in reddit.subreddit(to_search).hot(limit=10):
             art.append((submission.title, submission.author, submission.score, submission.url))
 
-        data = {"articulos": art}
+        data = {"articulos": art, "busqueda": to_search}
         return render(request, 'Blog/reddit.html', data)
     else:
         return render(request, 'Blog/reddit.html')

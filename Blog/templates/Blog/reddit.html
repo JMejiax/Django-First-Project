@@ -16,6 +16,9 @@
     <button type="submit">Buscar</button>
 </form>
 
+<br>
+<h1>Resultados para: '{{busqueda}}'</h1>
+
 {% for art in articulos %}
 
 
@@ -26,13 +29,13 @@
           <div class="blog-card__info">
             <h5>{{art.0}}</h5>
             <p>
-              <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i>{{art.1}}</a>
-              <a href="#" class="icon-link"><i class="fa fa-calendar-check-o"></i>{{art.2}}</a>
+              <p href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> &nbsp; {{art.1}}</p>
+              <a href="#" class="icon-link"><i class="fa fa-sort-numeric-desc"></i> &nbsp; {{art.2}}</a>
             </p>
             <p>
                 {{art.3}}
             </p>
-            <a href="{{art.3}}" class="btn btn--with-icon"><i
+            <a href="{{art.3}}" class="btn btn--with-icon" target="_blank"><i
                 class="btn-icon fa fa-long-arrow-right"></i>Seguir leyendo...</a>
           </div>
         </article>
@@ -42,5 +45,5 @@
 
 {% endfor %}
 
-<br><br><br>
+<br>
 {% endblock %}
