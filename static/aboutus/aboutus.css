@@ -37,7 +37,7 @@ img#body-img{
 }
 
 #mailto:hover {
-	color:  #b55400;
+	color:  #b55400 !important;
 }
 
 .contenedor {
