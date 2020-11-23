@@ -51,7 +51,7 @@
         </li>
       </ul>
       <div>
-        <form action="{% url 'reddit' %}" method="POST" role="search"> {% csrf_token %}
+        <form action="{% url 'Reddit' %}" method="POST" role="search"> {% csrf_token %}
           <input id="search" name="search" type="search" placeholder="Buscar en reddit..." required />
           <button type="submit">Buscar</button>
       </form>
