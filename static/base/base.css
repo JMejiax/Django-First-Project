@@ -45,9 +45,6 @@ a{
 
 
 /* Boton adentro del input */
-#mostrar{
-    float: right;
-}
 
 .buttonIn { 
     width: 300px; 
@@ -55,18 +52,16 @@ a{
 } 
   
 #search { 
-    margin: 0px; 
+    margin: 10px; 
     padding: 0px; 
     width: 100%; 
     outline: none; 
     height: 40px; 
-    border-radius: 5px; 
 } 
   
 #btnSearch { 
     position: absolute; 
-    top: 0; 
-    border-radius: 5px; 
+    top: 0;
     right: 0px; 
     z-index: 2; 
     border: none; 
@@ -74,7 +69,7 @@ a{
     height: 30px; 
     cursor: pointer; 
     color: black; 
-    background-color: #52525200; 
+    background-color: #383838ab; 
     transform: translateX(2px); 
 } 
 
