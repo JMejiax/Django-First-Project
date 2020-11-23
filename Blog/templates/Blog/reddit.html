@@ -1,0 +1,29 @@
+{% extends "PaginaBlogApp/base/base.html" %}
+
+{% block links %}
+
+<!-- Links de css -->
+
+<link rel="stylesheet" type="text/css" href="/static/blog/reddit.css">
+{% endblock links %}
+
+{% block content %}
+
+<form method="POST" role="search"> {% csrf_token %}
+    <label for="search">Buscar articulos en reddit</label><br>
+    <input id="search" name="search" type="search" placeholder="Buscar..." required />
+    <button type="submit">Buscar</button>
+</form>
+
+{% for art in articulos %}
+
+<p>Titulo: {{art.0}}</p>
+<p>Autor: {{art.1}}</p>
+<p>Score: {{art.2}}</p>
+<p>Link: {{art.3}}</p>
+<hr>
+
+{% endfor %}
+
+<br><br><br>
+{% endblock %}
