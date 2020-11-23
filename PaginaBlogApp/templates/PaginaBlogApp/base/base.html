@@ -54,7 +54,7 @@
             href="{% url 'Publicaciones' %}">Publicaciones</a>
         </li>
       </ul>
-      <div class="social-part" style="font-size: 20px;">
+      <div>
         <form action="{% url 'Reddit' %}" method="POST" role="search"> {% csrf_token %}
           <i id="mostar" class="fa fa-search fa-2x" aria-hidden="true" style="color: white;"></i>
           <div class="buttonIn">
