@@ -9,11 +9,11 @@ $(document).ready(function () {
         $("#mostar").hide();
     });
 
-    $("#navbar1").click(function () {
-        $("#search").hide();        
-        $("#btnSearch").hide(); 
-        $("#mostar").show();
-    });    
+    // $("#navbar1").click(function () {
+    //     $("#search").hide();        
+    //     $("#btnSearch").hide(); 
+    //     $("#mostar").show();
+    // });    
 
     window.addEventListener('load', () => { 
         const button = document.querySelector('#btnSearch'); 

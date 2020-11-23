@@ -45,6 +45,10 @@ a{
 
 
 /* Boton adentro del input */
+#mostrar{
+    float: right;
+}
+
 .buttonIn { 
     width: 300px; 
     position: relative; 
