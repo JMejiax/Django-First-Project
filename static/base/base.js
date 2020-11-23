@@ -1,10 +1,6 @@
 $(document).ready(function () {
-    $("#btnSearch").click(function () {
-        $("#search").toggle();
+    $("#mostar").click(function () {
+        $("#search").toggle();        
+        $("#btnSearch").toggle();        
     });
-    // $("#btnSearch").click(function () {
-    //     $("#search").slideDown(5000);
-
-    // });
-
 });

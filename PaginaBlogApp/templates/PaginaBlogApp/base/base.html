@@ -1,6 +1,6 @@
 <html lang="en">
 
-<head> 
+<head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
 
 </head>
 
-<body> 
+<body>
 
   <!-- Navbar ?rnd=132 -->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-solid" id="barra-nav">
@@ -38,23 +38,28 @@
     <div class="collapse navbar-collapse" id="navbar1">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'Inicio' %}" >Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'Inicio' %}">Inicio <span
+              class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/nosotros/' %}active{% endif %}" href="{% url 'Nosotros' %}" >Sobre nosotros</a>
+          <a class="nav-link {% if request.path == '/nosotros/' %}active{% endif %}" href="{% url 'Nosotros' %}">Sobre
+            nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/contacto/' %}active{% endif %}" href="{% url 'Contacto' %}" >Contactos </a>
+          <a class="nav-link {% if request.path == '/contacto/' %}active{% endif %}"
+            href="{% url 'Contacto' %}">Contactos </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == '/posts/' %}active{% endif %} {% if request.path == '/post/' %}active{% endif %}" href="{% url 'Publicaciones' %}">Publicaciones</a>
+          <a class="nav-link {% if request.path == '/posts/' %}active{% endif %} {% if request.path == '/post/' %}active{% endif %}"
+            href="{% url 'Publicaciones' %}">Publicaciones</a>
         </li>
       </ul>
       <div>
         <form action="{% url 'Reddit' %}" method="POST" role="search"> {% csrf_token %}
           <input id="search" name="search" type="search" placeholder="Buscar en reddit..." required />
           <button id="btnSearch" type="submit">Buscar</button>
-      </form>
+          <i id="mostar" class="fa fa-pencil fa-3x" aria-hidden="true" style="color: white;"></i>
+        </form>
       </div>
       <!-- <div class="social-part" style="font-size: 20px;">
         <a href="https://www.linkedin.com/in/jonathan-mejias-3a3a74154">
@@ -74,7 +79,7 @@
   {% block content %}
 
 
-  
+
   {% endblock %}
 
   <!-- Footer -->
@@ -108,7 +113,7 @@
       <p class="m-0 mbt1 text-light">&copy; Proyecto Aplicaciones Web 2020</p>
     </div>
   </footer>
-  
+
   <!-- Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
