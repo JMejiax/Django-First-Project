@@ -1,3 +1,32 @@
+/* @media only screen and (max-width: 720px){
+	#me{
+
+	}
+	
+}
+  
+@media only screen and (min-width: 720px){
+	#me{
+		width: auto;
+		height: auto;
+	}
+  
+} */
+#me{
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("me.jpg") ;
+    
+    /* Set a specific height */
+    height: 90%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    overflow: hidden;
+}
 img#body-img{
     width: 100%;
 }
@@ -5,6 +34,10 @@ img#body-img{
 #map {
 	height: 350px;
 	width: 100%;
+}
+
+#mailto:hover {
+	color:  #b55400;
 }
 
 .contenedor {
