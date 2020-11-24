@@ -18,7 +18,7 @@ $(document).ready(function () {
         }
     }); 
 
-    $("#search").keypress(function () {
+    $("#search").keydown(function () {
         if ($("#search").val() == "") {
             $("#innerIcon").removeClass("fa-search").addClass("fa-times");
         }else{
