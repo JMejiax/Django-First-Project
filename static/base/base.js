@@ -11,17 +11,12 @@ $(document).ready(function () {
     });
 
     $("#btnSearch").click(function () {
-        if (("#search").value == '') {
+        if ($("#search").val() == "") {
             $("#search").toggle();
             $("#btnSearch").toggle();
             $("#mostrar").show();
         }
-    });
-    // $("#navbar1").click(function () {
-    //     $("#search").hide();        
-    //     $("#btnSearch").hide(); 
-    //     $("#mostar").show();
-    // });    
+    }); 
 
     window.addEventListener('load', () => {
         const button = document.querySelector('#btnSearch');
