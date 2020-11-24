@@ -14,7 +14,7 @@
 
 {% if articulos %}
 <br>
-<h1>Resultados para: '{{busqueda}}'</h1>
+<h1>Resultados para: "{{busqueda}}"</h1>
 {% for art in articulos %}
 
 <div class="container ">
@@ -25,10 +25,7 @@
                     <h5>{{art.0}}</h5>
                     <p>
                         <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> &nbsp; {{art.1}}</a>
-                    <p href="#" class="icon-link"><i class="fa fa-sort-numeric-desc"></i> &nbsp; {{art.2}}</p>
-                    </p>
-                    <p>
-                        {{art.3}}
+                        &nbsp; &nbsp;<i class="fa fa-sort-numeric-desc"></i> &nbsp; {{art.2}}
                     </p>
                     <a href="{{art.3}}" class="btn btn--with-icon" target="_blank"><i
                             class="btn-icon fa fa-long-arrow-right"></i>Seguir leyendo...</a>
