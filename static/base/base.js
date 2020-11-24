@@ -26,11 +26,4 @@ $(document).ready(function () {
         }
     }); 
 
-    window.addEventListener('load', () => {
-        const button = document.querySelector('#btnSearch');
-        button.addEventListener('click', () => {
-            document.querySelector('#search').value = "";
-        });
-    });
-
 });
