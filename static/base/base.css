@@ -48,6 +48,7 @@ a{
 #mostrar{
     margin-right: 10px;
     float: right;
+    cursor: pointer;
 }
 
 #mostrar:hover{
