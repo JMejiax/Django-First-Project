@@ -46,6 +46,7 @@ a{
 
 /* Boton adentro del input */
 #mostrar{
+    margin-right: 10px;
     float: right;
 }
 
@@ -70,11 +71,11 @@ a{
     top: 8px; 
     height: 40px; 
     cursor: pointer; 
-    color: black; 
+    color: black !important; 
     transform: translateX(-60px); 
 } 
 
 #btnSearch:hover{
-    color: #b55400;
+    color: white !important;
     background-color: #222831;
 }
