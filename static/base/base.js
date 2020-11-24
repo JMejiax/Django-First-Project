@@ -18,6 +18,14 @@ $(document).ready(function () {
         }
     }); 
 
+    $("#search").keypress(function () {
+        if ($("#search").val() == "") {
+            $("#innerIcon").removeClass("fa-search").addClass("fa-times");
+        }else{
+            $("#innerIcon").removeClass("fa-times").addClass("fa-search");
+        }
+    }); 
+
     window.addEventListener('load', () => {
         const button = document.querySelector('#btnSearch');
         button.addEventListener('click', () => {
