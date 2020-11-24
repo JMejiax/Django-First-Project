@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     $("#search").hide();        
     $("#btnSearch").hide(); 
+    $("#buttonIn").hide(); 
 
     $("#mostar").click(function () {
         $("#search").toggle();        
