@@ -23,7 +23,7 @@ def reddit(request):
             to_search = search.replace(' ', '')
             reddit = praw.Reddit(client_id="q1i340R54PKFwg", client_secret="moaYGZScmCG_t131e5zGOVoW8FkHDg", user_agent="jm_cys")
             try:
-                for submission in reddit.subreddit(to_search).hot(limit=10):
+                for submission in reddit.subreddit(to_search).rising(limit=13):
                     art.append((submission.title, submission.author, submission.score, submission.url))
             except Exception:
                 pass
