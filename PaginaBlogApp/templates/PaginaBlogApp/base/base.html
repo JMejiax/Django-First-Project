@@ -57,7 +57,7 @@
       <div>
         <form action="{% url 'Reddit' %}" method="POST" role="search"> {% csrf_token %}
           <div class="buttonIn">
-            <input id="search" name="search" type="search" placeholder="Buscar en reddit..." />
+            <input id="search" name="search" type="search" placeholder="Buscar en reddit..." required/>
             <button id="btnSearch" type="submit">
               <i id="innerIcon" class="fa fa-times fa-2x" aria-hidden="true"></i>
             </button>
