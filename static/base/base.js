@@ -4,10 +4,10 @@ $(document).ready(function () {
     $("#btnSearch").hide(); 
     $("#buttonIn").hide(); 
 
-    $("#mostar").click(function () {
+    $("#mostrar").click(function () {
         $("#search").toggle();        
         $("#btnSearch").toggle();   
-        $("#mostar").hide();
+        $("#mostrar").hide();
     });
 
     // $("#navbar1").click(function () {
