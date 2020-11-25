@@ -127,3 +127,63 @@
   right: 20px;
   color: white;
 }
+
+/* The hero image */
+.hero-image-3 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("c5.jpg") ;
+  
+  /* Set a specific height */
+  height: 90%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  border-bottom: 1px solid black;
+
+  overflow: hidden;
+}
+
+/* Place text in the middle of the image */
+.hero-text-3 {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  top: 30%;
+  right: 20px;
+  color: white;
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+/* Style table headers and table data */
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+/* Zebra-striped table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
