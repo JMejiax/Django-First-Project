@@ -149,11 +149,11 @@
 
 /* Place text in the middle of the image */
 .hero-text-3 {
-  width: 100%;
-  text-align: right;
+  left: 10%;
+  width: 75%;
+  text-align: left;
   position: absolute;
-  top: 30%;
-  right: 20px;
+  top: 15%;
   color: white;
 }
 
@@ -177,9 +177,13 @@ th:first-child, td:first-child {
 
 /* Zebra-striped table rows */
 tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #222831
 }
 
+/* Zebra-striped table rows */
+tr:nth-child(odd) {
+  background-color: #393e46
+}
 .fa-check {
   color: green;
 }
