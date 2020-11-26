@@ -200,3 +200,9 @@ th:first-child, td:first-child {
 .fa-remove {
   color: red;
 }
+
+.btn{
+  float: right;
+  background-color: #222831;
+  color: white;
+}
