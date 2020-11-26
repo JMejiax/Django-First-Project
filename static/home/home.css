@@ -8,10 +8,14 @@
   .hero-text p{
     font-size: 4vw;
   }
-  
+  table
   .hero-text-1 p,
   .hero-text-2 p{
     font-size: 2.7vw;
+  }
+
+  .hero-image{
+    padding: 70px 50px;
   }
 
 }
@@ -30,6 +34,10 @@
   .hero-text-1 p,
   .hero-text-2 p{
     font-size: 2vw;
+  }
+
+  .hero-image{
+    padding: 10px 10px;
   }
 
 }
