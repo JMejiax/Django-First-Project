@@ -168,6 +168,10 @@ table {
 
 /* Style table headers and table data */
 tr{
+  background-color: #393e46;
+}
+
+tr:first-child{
   background-color: #222831
 }
 
