@@ -131,19 +131,19 @@
 .hero-image-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(c5.jpg);
   /* height: 100%; */
-  padding: 30px;
+  padding: 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* position: relative; */
   /* padding: 100px; */
   border-bottom: 1px solid black;
-
 }
 
 /* Place text in the middle of the image */
 .hero-text-3 {
   /* left: 10%; */
+  padding: 35px;
   margin: auto;
   width: 75%;
   text-align: left;
@@ -197,10 +197,10 @@ th:first-child, td:first-child {
 }
 
 .btn{
-  float: right;
   background-color: #222831;
   color: white;
   width: 100%; 
+  /*width: 137%; */
 }
 
 .btn:hover{
