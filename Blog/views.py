@@ -15,6 +15,9 @@ def publicaciones(request):
 def publicacion(request):
     return render(request, 'Blog/post.html')
 
+def publicacion2(request):
+    return render(request, 'Blog/post2.html')
+
 def reddit(request):
     if request.method == 'POST':
         art = []
