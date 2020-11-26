@@ -131,7 +131,7 @@
 .hero-image-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(c5.jpg);
   /* height: 100%; */
-  padding: 70px;
+  padding: 70px 50px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,24 +142,21 @@
 
 /* Place text in the middle of the image */
 .hero-text-3 {
-  /* left: 10%; */
-  padding: 35px;
-  margin: auto;
-  width: 75%;
-  text-align: left;
-  /* position: absolute; */
-  /* top: 15%; */
-  color: white;
-  font-weight: bold;
+  /*left: 10%; */
+    /* padding: 35px; */
+    /* margin: auto; */
+    width: 100%;
+    text-align: left;
+    /* position: absolute; */
+    /* top: 15%; */
+    color: white;
+    font-weight: bold;
 }
 
 /* Style the table */
-/* table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  padding: 10px;
-} */
+table {
+  margin-bottom: 0;
+}
 
 /* Style table headers and table data */
 tr{
