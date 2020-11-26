@@ -155,7 +155,7 @@
 
 /* Style the table */
 table {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 /* Style table headers and table data */
