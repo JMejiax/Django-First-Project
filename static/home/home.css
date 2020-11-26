@@ -204,10 +204,10 @@ th:first-child, td:first-child {
   float: right;
   background-color: #222831;
   color: white;
-  height: 200px; 
+  width: 100%; 
 }
 
-.brn:hover{
+.btn:hover{
   color: #222831;
   background-color: white;
 }
