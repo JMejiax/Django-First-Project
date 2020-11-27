@@ -20,6 +20,10 @@
     .video iframe{
         width: 100%; 
     }
+
+    .video.video1{
+        width: 100%; 
+    }
 }
 
 .contenedor{
