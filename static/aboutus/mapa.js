@@ -12,6 +12,7 @@ function iniciarMap(position){
 
   var guatusa = new google.maps.LatLng(10.106365, -84.252139);
   var somewhere = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  console.log(position.coords.latitude, position.coords.longitude)
   // var somewhere = new google.maps.LatLng(10.423129, -83.755066);
 
   var options = {
