@@ -1,3 +1,4 @@
+// Muestre solo el mapa
 function iniciarMap2(){
     var coord = {lat:10.106365 ,lng:-84.252139};
 
@@ -9,7 +10,6 @@ function iniciarMap2(){
       position: coord,
       map: map
     });
-
 }
 
 function iniciarMap(){
