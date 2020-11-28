@@ -10,11 +10,11 @@ function calculos(){
     var impuestoA = pagoAnual*iva;
     var totalAnual = pagoAnual+impuestoA;
 
-    var body = document.getElementsByClassName("modal-body");
+    var body = document.getElementById("body-mod");
     body.innerHTML += "<h4>Pago por día: " + pordia + "</h4>";
     body.innerHTML += "<h4>Pago mensual: " + totalMensual + "</h4>";
     body.innerHTML += "<h4>Pago por año: " + totalAnual + "</h4>";
     body.innerHTML += "<h4>Porcentaje de impuestos: " + (iva*100.0) + "% </h4>";
 }
 
-document.get
+document.getElementById('btn-modal').addEventListener('click', calculos);
