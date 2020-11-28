@@ -19,8 +19,10 @@ function iniciarMap(){
 
   var guatusa = new google.maps.LatLng(10.106365, -84.252139);
   if (navigator.geolocation) {
-    var position = navigator.geolocation.getCurrentPosition();
-    var somewhere = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var somewhere = navigator.geolocation.getCurrentPosition(function pos(position){
+      var place = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      return place;
+    });
   } else {
     var somewhere = new google.maps.LatLng(10.423129, -83.755066);
   }
