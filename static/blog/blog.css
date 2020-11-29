@@ -26,3 +26,12 @@
 .card-img-top{
   max-height: 125px !important;
 }
+
+.referencias a{
+  color: black; 
+  text-decoration: none;
+}
+
+.referencias a:hover{
+  color: #b55400;
+}
